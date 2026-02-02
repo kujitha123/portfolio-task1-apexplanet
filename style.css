@@ -1,3 +1,4 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Body */
 body {
     background-color: #f4f6f8;
     color: #333;
@@ -13,53 +15,67 @@ body {
 
 /* Header */
 header {
-    background-color: #1f2937;
+    background-color: #0a66c2;
     color: white;
+    padding: 30px 20px;
     text-align: center;
-    padding: 30px 15px;
 }
 
 header h1 {
-    font-size: 32px;
-    margin-bottom: 8px;
+    font-size: 2.2rem;
 }
 
 header p {
-    font-size: 14px;
-    margin: 4px 0;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* Header Button */
+header button {
+    margin-top: 18px;
+    padding: 10px 24px;
+    background-color: #ffffff;
+    color: #0a66c2;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #e6eef8;
 }
 
 /* Navigation */
 nav {
-    background-color: #111827;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    background-color: #ffffff;
+    text-align: center;
     padding: 12px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-nav a:hover {
-    text-decoration: underline;
+    margin: 0 12px;
+    color: #0a66c2;
+    font-weight: bold;
 }
 
 /* Sections */
 section {
-    max-width: 900px;
-    margin: 30px auto;
     background: white;
+    max-width: 900px;
+    margin: 25px auto;
     padding: 25px;
-    border-radius: 6px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 section h2 {
-    margin-bottom: 12px;
-    color: #1f2937;
+    margin-bottom: 15px;
+    color: #0a66c2;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
 }
 
 /* Lists */
@@ -67,15 +83,43 @@ ul {
     margin-left: 20px;
 }
 
-li {
+ul li {
     margin-bottom: 8px;
+}
+
+/* Links */
+a {
+    color: #0a66c2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
 footer {
-    background-color: #1f2937;
-    color: white;
     text-align: center;
-    padding: 12px;
-    margin-top: 40px;
+    padding: 15px;
+    background: #222;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
 }
