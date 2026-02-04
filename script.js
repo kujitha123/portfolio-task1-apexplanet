@@ -1,4 +1,4 @@
-document.getElementById("contactBtn").addEventListener("click", function () {
+document.getElementById("contactBtn").addEventListener("click", () => {
     document.getElementById("contact").scrollIntoView({
         behavior: "smooth"
     });
